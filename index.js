@@ -5,7 +5,7 @@ const app = express();
 const userRoutes = require("./routes/userRoutes");
 const dbConnect = async () => {
   try {
-    await mongoose.connect("mongodb://localhost:27017/MyCrudWeb");
+    await mongoose.connect("mongodb+srv://Bhavani-Bojedla:Bhavani123@cluster1.34vtstj.mongodb.net/MyCrudWeb");
     console.log("Database Connected");
   } catch (error) {
     console.log("error in db connection");
